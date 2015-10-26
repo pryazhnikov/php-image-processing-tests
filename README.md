@@ -2,7 +2,7 @@
 
 ## How to use?
 
-    git clone git@github.com:pryazhnikov/php-image-processing-tests.git .
+    git clone git@github.com:pryazhnikov/php-image-processing-tests.git php-image-processing-tests
     cd php-image-processing-tests
     ./run.sh
 
