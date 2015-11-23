@@ -3,8 +3,8 @@
 require_once "TestSettings.php";
 dl("imagick.so");
 
-$input_file = __DIR__ . '/' . TestSettings::INPUT_FILE;
-$output_file = __DIR__ . "/output/imagick.jpg";
+$input_file = TestSettings::getAssetsDir() . TestSettings::INPUT_FILE;
+$output_file = TestSettings::getOutputDir() . "imagick.jpg";
 
 $timers = [
     'new'      => 0,

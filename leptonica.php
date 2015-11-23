@@ -3,8 +3,8 @@
 require_once "TestSettings.php";
 dl("leptonica.so");
 
-$input_file = __DIR__ . '/' . TestSettings::INPUT_FILE;
-$output_file = __DIR__ . "/output/leptonica.jpg";
+$input_file = TestSettings::getAssetsDir() . TestSettings::INPUT_FILE;
+$output_file = TestSettings::getOutputDir() . "leptonica.jpg";
 
 $timers = [
     'new'      => 0,
